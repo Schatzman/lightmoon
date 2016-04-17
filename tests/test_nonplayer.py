@@ -7,20 +7,20 @@
 
 import unittest
 
-from lightmoon.lib.player import Player
+from lightmoon.lib.nonplayer import NonPlayer
 
-class TestPlayer(unittest.TestCase):
+class TestNonPlayer(unittest.TestCase):
     def setUp(self):
-        self.player = Player()
+        self.nonplayer = NonPlayer()
 
     def tearDown(self):
         pass
 
-    def test_Player_alive(self):
-        self.assertTrue(self.player.alive)
+    def test_NonPlayer_alive(self):
+        self.assertTrue(self.nonplayer.alive)
 
-    def test_Player_stats(self):
-        self.assertEqual(self.player.stats, {})
+    def test_NonPlayer_stats(self):
+        self.assertEqual(self.nonplayer.stats, {})
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
