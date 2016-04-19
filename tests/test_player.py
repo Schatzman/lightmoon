@@ -16,8 +16,11 @@ class TestPlayer(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_Player_alive(self):
+    def test_player_alive(self):
         self.assertTrue(self.player.alive)
+
+    def test_player_stats(self):
+        self.assertEqual(self.player.stats, {})
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
