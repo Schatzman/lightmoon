@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 
 import random
+from lightmoon.conf.settings import DEFAULT_DATE_FORMAT
+from lightmoon.conf.settings import DEFAULT_LOGGING_FORMAT
+from lightmoon.conf.settings import DEFAULT_LOGGING_LEVEL
+from lightmoon.conf.settings import DEFAULT_MAIN_LOGFILE
 
 def configure_logging(
-                        filename='main.log',
-                        format_=(
-                            '%(asctime)s user %(name)s @' +
-                            ' %(filename)s %(levelname)s: ' +
-                            '%(message)s'
-                            ),
-                        datefmt='%m/%d/%Y %I:%M:%S %p',
-                        level=10
+                        filename=DEFAULT_MAIN_LOGFILE,
+                        format_=DEFAULT_LOGGING_FORMAT,
+                        datefmt=DEFAULT_DATE_FORMAT,
+                        level=DEFAULT_LOGGING_LEVEL
                         ):
     import logging
     logging.basicConfig(
