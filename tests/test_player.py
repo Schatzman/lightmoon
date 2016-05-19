@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # DSM 4/16/2016
-#
-# Run this test file from one folder above lightmoon/.
-# Use the following command:
-# python3 -m lightmoon.tests.test_player
+"""
+lightmoon.tests.test_player
 
+This script will run tests for lightmoon.lib.player.
+@usage - From the directory above lightmoon, use:
+    python -m lightmoon.tests.test_player
+"""
 import unittest
 
 from lightmoon.lib.player import Player

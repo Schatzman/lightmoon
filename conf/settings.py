@@ -1,5 +1,13 @@
 #!/usr/bin/env python
+# DSM 5/19/2016
+"""
+lightmoon.conf.settings
 
+This file contains constants which can be imported and used
+throughout the project.
+@Usage:
+    from lightmoon.conf.settings import SOME_CONSTANT
+"""
 #####################################################################
 # LOGGING SETTINGS                                                  #
 #####################################################################

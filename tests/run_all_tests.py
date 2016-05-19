@@ -1,5 +1,11 @@
 #!/usr/bin/env python
+"""
+lightmoon.tests.run_all_tests
 
+This script will run all of the unit tests for the lightmoon project.
+@usage - From the directory above lightmoon, use:
+    python -m lightmoon.tests.run_all_tests
+"""
 import glob
 import subprocess
 

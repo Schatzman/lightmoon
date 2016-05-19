@@ -1,5 +1,12 @@
 #!/usr/bin/env python
+# DSM 5/19/2016
+"""
+lightmoon.tests.test_util
 
+This script will run tests for lightmoon.lib.util.
+@usage - From the directory above lightmoon, use:
+    python -m lightmoon.tests.test_util
+"""
 import random # random testing is bad. so what? I do what I want.
 import unittest
 from lightmoon.lib.util import roll_dice

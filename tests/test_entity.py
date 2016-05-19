@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # DSM 4/21/2016
-#
-# Run this test file from one folder above lightmoon/.
-# Use the following command:
-# python3 -m lightmoon.tests.test_entity
+"""
+lightmoon.tests.test_entity
 
+This script will run tests for lightmoon.lib.primal.Entity.
+@usage - From the directory above lightmoon, use:
+    python -m lightmoon.tests.test_entity
+"""
 import unittest
 
 from lightmoon.lib.primal import Entity

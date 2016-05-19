@@ -1,5 +1,12 @@
 #!/usr/bin/env python
+# DSM 4/21/2016
+"""
+lightmoon.lib.util
 
+Contains various utility functions.
+@Usage:
+    from lightmoon.lib.util import some_function
+"""
 import random
 from lightmoon.conf.settings import DEFAULT_DATE_FORMAT
 from lightmoon.conf.settings import DEFAULT_LOGGING_FORMAT

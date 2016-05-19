@@ -1,13 +1,16 @@
 #!/usr/bin/env python
+# DSM 4/21/2016
+"""
+lightmoon.tests.test_entitycreation
 
+This script will run tests for lightmoon.lib.entitycreation.
+@usage - From the directory above lightmoon, use:
+    python -m lightmoon.tests.test_entitycreation
+"""
 import unittest
 from lightmoon.lib.entity_creation import return_stats
 from lightmoon.tests.test_resources.test_values import TEST_VALUES
 
-# TODO: 
-#   write tests for entity_creation
-
-#   moar char creatio
 class TestEntityCreation(unittest.TestCase):
 
     def setUp(self):
