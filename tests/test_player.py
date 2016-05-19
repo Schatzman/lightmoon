@@ -11,7 +11,9 @@ from lightmoon.lib.player import Player
 
 class TestPlayer(unittest.TestCase):
     def setUp(self):
-        self.player = Player()
+        self.name = 'Frank'
+        self.ex_stats = {'somestat':1}
+        self.player = Player(name=self.name, stats=self.ex_stats)
 
     def tearDown(self):
         pass
@@ -20,7 +22,10 @@ class TestPlayer(unittest.TestCase):
         self.assertTrue(self.player.alive)
 
     def test_player_stats(self):
-        self.assertEqual(self.player.stats, {})
+        self.assertEqual(self.player.stats, self.ex_stats)
+
+    def test_player_name(self):
+        self.assertEqual(self.player.name, self.name)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

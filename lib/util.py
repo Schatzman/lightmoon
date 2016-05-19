@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import random
+
 def configure_logging(
                         filename='main.log',
                         format_=(
@@ -18,3 +20,6 @@ def configure_logging(
             level=level
         )
     return logging
+
+def roll_dice(number_of_dice=3, sides_per_die=6):
+    return random.randint(number_of_dice, int(sides_per_die * number_of_dice))

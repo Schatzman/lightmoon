@@ -3,6 +3,5 @@
 from lightmoon.lib.primal import Entity
 
 class Player(Entity):
-    def __init__(self):
-        super(Player, self).__init__()
-
+    def __init__(self, *args, **kwargs):
+        super(Player, self).__init__(*args, **kwargs)
